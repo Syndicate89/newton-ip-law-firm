@@ -160,7 +160,8 @@
                             <div class="icon-wrap"><i class="fas fa-microchip"></i></div>
                             <h4 class="item-title">특허 출원</h4>
                             <p class="item-desc">AI, 로봇, 기계 설비 분야 전문. 복잡한 메커니즘을 명확한 권리로 만듭니다.</p>
-                            <a href="#" class="item-link">자세히 보기</a>
+                            <a href="javascript:void(0)" class="item-link open-modal" data-modal="modal-patent">자세히
+                                보기</a>
                         </div>
                     </div>
                     <div class="service-item" id="svc-2">
@@ -168,7 +169,8 @@
                             <div class="icon-wrap"><i class="fas fa-copyright"></i></div>
                             <h4 class="item-title">상표 등록</h4>
                             <p class="item-desc">이름의 무게를 지킵니다. 브랜드 네이밍부터 분쟁 대응까지 원스톱 케어.</p>
-                            <a href="#" class="item-link">자세히 보기</a>
+                            <a href="javascript:void(0)" class="item-link open-modal" data-modal="modal-trademark">자세히
+                                보기</a>
                         </div>
                     </div>
                     <div class="service-item" id="svc-3">
@@ -176,7 +178,8 @@
                             <div class="icon-wrap"><i class="fas fa-scale-balanced"></i></div>
                             <h4 class="item-title">심판/소송</h4>
                             <p class="item-desc">기각된 사건, 침해받은 권리. 뉴턴의 논리로 판결을 뒤집습니다.</p>
-                            <a href="#" class="item-link">자세히 보기</a>
+                            <a href="javascript:void(0)" class="item-link open-modal" data-modal="modal-litigation">자세히
+                                보기</a>
                         </div>
                     </div>
                     <div class="service-item" id="svc-4">
@@ -184,7 +187,8 @@
                             <div class="icon-wrap"><i class="fas fa-globe"></i></div>
                             <h4 class="item-title">해외 출원</h4>
                             <p class="item-desc">미국, 유럽, 중국. 전 세계 어디서든 귀하의 권리는 유효합니다.</p>
-                            <a href="#" class="item-link">자세히 보기</a>
+                            <a href="javascript:void(0)" class="item-link open-modal" data-modal="modal-global">자세히
+                                보기</a>
                         </div>
                     </div>
                 </div>
@@ -253,6 +257,81 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modals -->
+    <div class="modal-overlay" id="modal-overlay">
+        <!-- Patent Modal -->
+        <div class="modal" id="modal-patent">
+            <button class="close-modal">&times;</button>
+            <div class="modal-header">
+                <i class="fas fa-microchip"></i>
+                <h3>특허 출원 및 등록</h3>
+            </div>
+            <div class="modal-body">
+                <p>AI, 로봇, 정밀 기계 등 딥테크 분야에 최적화된 권리화 전략을 제공합니다.</p>
+                <ul class="modal-list">
+                    <li>기술 분석 및 선행기술조사</li>
+                    <li>최적의 권리 범위를 확보하는 명세서 작성</li>
+                    <li>특허청 의견제출통지서(OA)에 대한 심사관 맞춤형 대응</li>
+                    <li>해외 패밀리 특허 확보 전략 수립</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Trademark -->
+        <div class="modal" id="modal-trademark">
+            <button class="close-modal">&times;</button>
+            <div class="modal-header">
+                <i class="fas fa-copyright"></i>
+                <h3>상표 및 브랜드 보호</h3>
+            </div>
+            <div class="modal-body">
+                <p>기업의 정체성과 신뢰의 상징인 브랜드의 가치를 법적으로 견고히 보호합니다.</p>
+                <ul class="modal-list">
+                    <li>브랜드 네이밍 컨설팅 및 등록 가능성 검토</li>
+                    <li>국내 상표 출원 및 마드리드 국제 출원</li>
+                    <li>상표권 침해 모니터링 및 경고장 발송</li>
+                    <li>이의신청 및 상표권 무효/취소 심판</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Litigation -->
+        <div class="modal" id="modal-litigation">
+            <button class="close-modal">&times;</button>
+            <div class="modal-header">
+                <i class="fas fa-scale-balanced"></i>
+                <h3>IP 심판 및 소송</h3>
+            </div>
+            <div class="modal-body">
+                <p>권리 침해로부터 의뢰인을 방어하고, 부당한 권리 행사에 강력히 대응합니다.</p>
+                <ul class="modal-list">
+                    <li>특허심판원 무효, 취소, 권리범위확인심판</li>
+                    <li>특허법원 및 대법원 심결취소소송</li>
+                    <li>민/형사상 특허 침해 금지 및 손해배상 청구</li>
+                    <li>기술 유출 방지 및 영업비밀 보호 소송</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Global -->
+        <div class="modal" id="modal-global">
+            <button class="close-modal">&times;</button>
+            <div class="modal-header">
+                <i class="fas fa-globe"></i>
+                <h3>글로벌 IP 네트워크</h3>
+            </div>
+            <div class="modal-body">
+                <p>전 세계 주요 국가의 현지 대리인 네트워크를 통해 글로벌 시장 진출을 지원합니다.</p>
+                <ul class="modal-list">
+                    <li>PCT 국제 출원 및 국가별 진입 전략</li>
+                    <li>미국, 유럽, 중국, 일본 등 주요국 특허 확보</li>
+                    <li>해외 현지 법률 자문 및 IP 분쟁 대응</li>
+                    <li>해외 상표 및 디자인 등록 원스톱 서비스</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <script src="physics.js"></script>
 </body>

@@ -111,4 +111,36 @@
         engine.gravity.y = 0.8 + scrollPercent * 0.5;
     });
 
+    // Modal Interaction
+    const overlay = document.getElementById('modal-overlay');
+    const openBtns = document.querySelectorAll('.open-modal');
+    const closeBtns = document.querySelectorAll('.close-modal');
+    const modals = document.querySelectorAll('.modal');
+
+    openBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const modalId = btn.getAttribute('data-modal');
+            const targetModal = document.getElementById(modalId);
+
+            overlay.classList.add('active');
+            modals.forEach(m => m.style.display = 'none');
+            targetModal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    closeBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            overlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+    });
+
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+            overlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    });
+
 })();
