@@ -194,13 +194,20 @@ ul {
     font-size: 16px;
 }
 
+.search-cta.no-search {
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
 .search-cta .cta-link {
     font-weight: 600;
     color: var(--text-muted);
     font-size: 15px;
     border: 1px solid #ccc;
-    padding: 12px 25px;
+    padding: 15px 40px;
     border-radius: 50px;
+    display: inline-block;
 }
 
 .search-cta .cta-link:hover {
@@ -299,35 +306,23 @@ ul {
 }
 
 .about-visual {
-    height: 400px;
-    background-color: var(--primary-color);
+    height: 450px;
     border-radius: 20px;
     position: relative;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.floating-sphere {
-    width: 60px;
-    height: 60px;
-    background: radial-gradient(circle at 30% 30%, #fff, var(--accent-color));
-    border-radius: 50%;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-    animation: float 4s ease-in-out infinite;
+.about-office-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.9);
+    transition: 0.5s;
 }
 
-@keyframes float {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-50px);
-    }
+.about-office-img:hover {
+    filter: brightness(1);
+    transform: scale(1.05);
 }
 
 /* Profile / Member Card */
@@ -648,7 +643,7 @@ ul {
 /* Animations */
 .animate-ready .hero-slogan,
 .animate-ready .hero-desc,
-.animate-ready .search-box-wrap {
+.animate-ready .search-cta.no-search {
     animation: fadeInUp 0.8s forwards;
 }
 
@@ -656,7 +651,7 @@ ul {
     animation-delay: 0.3s;
 }
 
-.animate-ready .search-box-wrap {
+.animate-ready .search-cta.no-search {
     animation-delay: 0.6s;
 }
 
